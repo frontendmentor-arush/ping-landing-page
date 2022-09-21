@@ -1,0 +1,258 @@
+:root{
+    --Blue: hsl(223, 87%, 63%);
+    --Pale-Blue: hsl(223, 100%, 88%);
+    --Light-Red: hsl(354, 100%, 66%);
+    --Gray: hsl(0, 0%, 59%);
+    --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: Libre Franklin;
+}
+
+main{
+    text-align: center;
+    margin: 0 auto;
+    width: 300px;
+    height: 100vh;
+}
+
+header{
+    margin-top: 50px;
+}
+
+header img{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 4.5rem;
+}
+
+header h4{
+    color: var(--Gray);
+    font-size: 25px;
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+header h4 span{
+    color: var(--Very-Dark-Blue);
+    font-weight: 700;
+}
+
+header p{
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+section form input[type="email"]{
+    width: 250px;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 20px;
+    border: 1px solid var(--Pale-Blue); 
+    margin-bottom: 10px;
+
+}
+
+section form input[type="email"]::placeholder{
+        padding: 20px;
+        color: var(--Pale-Blue);
+}
+
+
+form span{
+    color: hsl(0, 100%, 74%) ;
+   
+}
+
+.errorinput{
+    border: 1px solid hsl(0, 100%, 74%) !important;  
+      
+}
+
+.error-text{
+    font-size: 14px;
+    margin-left: 0px;
+    font-size: 12px;
+    font-style: italic;
+}
+
+button{
+    background-color: var(--Blue);
+    color: white;
+    border-style: none;
+    width: 275px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 5px rgb(57 75 84 / 35%);
+    margin-bottom: 70px;
+    font-weight: 600;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: var(--Pale-Blue);
+}
+
+section img{
+    width: 300px;
+    /* height: 230px; */
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+
+footer .links{
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 70px;
+    margin-left: 100px;
+    
+}
+
+footer .links i{
+    border: 1px solid var(--Pale-Blue);
+    border-radius: 50%;
+    border-width: 1px;
+    color: var(--Blue);
+}
+
+footer .links i:hover{
+    color: var(--Blue);
+    cursor: pointer;
+}
+
+
+footer p{
+    color: var(--Gray);
+    font-size: 14px;
+    font-weight: 300;
+}
+
+@media screen and (min-width:800px) {
+
+    form{
+        display: flex;
+    }
+
+    main{
+        text-align: center;
+        margin: 0 auto;
+        width: 600px;
+    }
+    
+    header h4{
+        font-size: 40px;
+        width: 600px;
+    }
+    
+    header p{
+        font-size: 20px;
+    }
+    
+    section form input[type="email"]{
+        width: 300px;
+        height: 25px;
+        padding: 5px;
+    
+    }
+    
+    
+    button{
+        width: 150px;
+        padding: 10px;
+        margin-right: 70px;
+    }
+    
+    
+    section img{
+        width: 550px;
+    }
+    
+    footer .links{
+        padding: 10px;
+        margin-bottom: 10px;
+        width: 70px;
+        margin-left: 250px;
+    }
+    
+    
+    
+    footer p{
+        margin-bottom: 20px;
+    }
+
+    article{
+        margin-left: 60px;
+        margin-right: 10px;
+    }
+    
+}
+
+
+@media screen and (min-width:1450px) {
+
+    form{
+        display: flex;
+    }
+
+    main{
+        text-align: center;
+        margin: 0 auto;
+        width: 1000px;
+    }
+    
+    header h4{
+        font-size: 50px;
+        width: 1000px;
+    }
+    
+    header p{
+        font-size: 25px;
+    }
+    
+    section form input[type="email"]{
+        width: 400px;
+        height: 25px;
+        padding: 5px;
+        margin-right: 50px;
+    }
+    
+    
+    button{
+        width: 150px;
+        padding: 10px;
+        margin-right: 200px;
+    }
+    
+    
+    section img{
+        width: 800px;
+    }
+    
+    footer .links{
+        padding: 10px;
+        margin-bottom: 10px;
+        width: 70px;
+        margin-left: 450px;
+    }
+    
+    
+    footer p{
+        margin-bottom: 20px;
+    }
+
+    article{
+        margin-left: 170px;
+        margin-right: 10px;
+    }
+    
+}
